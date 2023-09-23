@@ -96,7 +96,9 @@ Vec4 Renderer::traceRay(const Scene& scene, Ray ray) {
 
 	float intensity = std::max(0.0f, dot(normal, -lightDirection));
 
-	return closest->albedo * intensity;	
+	Vec4 sphereColor = closest -> albedo;
+
+	return Vec4(Vec3(sphereColor.r, sphereColor.g, sphereColor.b) * intensity, sphereColor.a);	
 }
 
 void Renderer::setPixel(const Vec2& pos, const Vec3& color) { pixels[Utils::index(pos)] = Utils::toRGBA(color); }

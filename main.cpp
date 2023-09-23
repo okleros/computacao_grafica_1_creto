@@ -6,6 +6,8 @@ int main(int argc, char **argv) {
     Renderer renderer;
     Scene scene;
 
+    int frameCounter = 0;
+
     scene.spheres.push_back(Sphere(Vec3(-0.8f,  0.0f, 0.0f), Vec4(1.0f, 0.0f, 0.0f, 1.0f), 0.5));
     scene.spheres.push_back(Sphere(Vec3( 0.0f,  0.0f, 0.0f), Vec4(0.0f, 1.0f, 0.0f, 1.0f), 0.5));
     scene.spheres.push_back(Sphere(Vec3( 0.8f,  0.0f, 0.0f), Vec4(0.0f, 0.0f, 1.0f, 1.0f), 0.5));
@@ -21,6 +23,7 @@ int main(int argc, char **argv) {
     bool quit = false;
     while (!quit) {
         renderer.render(scene);
+        std::cout << ++frameCounter << std::endl;
 
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
