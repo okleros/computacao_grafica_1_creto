@@ -8,17 +8,15 @@ int main(int argc, char **argv) {
 
     int frameCounter = 0;
 
-    scene.spheres.push_back(Sphere(Vec3(-0.8f,  0.0f, 0.0f), Vec4(1.0f, 0.0f, 0.0f, 1.0f), 0.5));
-    scene.spheres.push_back(Sphere(Vec3( 0.0f,  0.0f, 0.0f), Vec4(0.0f, 1.0f, 0.0f, 1.0f), 0.5));
-    scene.spheres.push_back(Sphere(Vec3( 0.8f,  0.0f, 0.0f), Vec4(0.0f, 0.0f, 1.0f, 1.0f), 0.5));
-
-    scene.spheres.push_back(Sphere(Vec3(-0.8f, -0.8f, 0.0f), Vec4(1.0f, 1.0f, 0.0f, 1.0f), 0.5));
-    scene.spheres.push_back(Sphere(Vec3( 0.0f, -0.8f, 0.0f), Vec4(0.0f, 1.0f, 1.0f, 1.0f), 0.5));
-    scene.spheres.push_back(Sphere(Vec3( 0.8f, -0.8f, 0.0f), Vec4(1.0f, 0.0f, 1.0f, 1.0f), 0.5));
-
-    scene.spheres.push_back(Sphere(Vec3(-0.8f,  0.8f, 0.0f), Vec4(1.0f, 0.0f, 1.0f, 1.0f), 0.5));
-    scene.spheres.push_back(Sphere(Vec3( 0.0f,  0.8f, 0.0f), Vec4(0.0f, 1.0f, 1.0f, 1.0f), 0.5));
-    scene.spheres.push_back(Sphere(Vec3( 0.8f,  0.8f, 0.0f), Vec4(1.0f, 1.0f, 0.0f, 1.0f), 0.5));
+    scene.spheres.push_back(Sphere(Vec3(-0.8f,  0.0f, -2.0f), Vec4(1.0f, 0.0f, 0.0f, 1.0f), 0.4));
+    scene.spheres.push_back(Sphere(Vec3( 0.0f,  0.0f, -2.0f), Vec4(0.0f, 1.0f, 0.0f, 1.0f), 0.4));
+    scene.spheres.push_back(Sphere(Vec3( 0.8f,  0.0f, -2.0f), Vec4(0.0f, 0.0f, 1.0f, 1.0f), 0.4));
+    scene.spheres.push_back(Sphere(Vec3(-0.8f, -0.8f, -2.0f), Vec4(1.0f, 1.0f, 0.0f, 1.0f), 0.4));
+    scene.spheres.push_back(Sphere(Vec3( 0.0f, -0.8f, -2.0f), Vec4(0.0f, 1.0f, 1.0f, 1.0f), 0.4));
+    scene.spheres.push_back(Sphere(Vec3( 0.8f, -0.8f, -2.0f), Vec4(1.0f, 0.0f, 1.0f, 1.0f), 0.4));
+    scene.spheres.push_back(Sphere(Vec3(-0.8f,  0.8f, -2.0f), Vec4(1.0f, 0.0f, 1.0f, 1.0f), 0.4));
+    scene.spheres.push_back(Sphere(Vec3( 0.0f,  0.8f, -2.0f), Vec4(0.0f, 1.0f, 1.0f, 1.0f), 0.4));
+    scene.spheres.push_back(Sphere(Vec3( 0.8f,  0.8f, -2.0f), Vec4(1.0f, 1.0f, 0.0f, 1.0f), 0.4));
 
     bool quit = false;
     while (!quit) {
